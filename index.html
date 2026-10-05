@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Substituído pelo `--base-href` do `flutter build web`. -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jogo da velha, jokenpô, damas e xadrez grátis no navegador: contra o computador, com alguém do lado ou online.">
+  <meta name="theme-color" content="#5D7B6F">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Multi Jogos">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Multi Jogos — velha, jokenpô, damas e xadrez</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- ADSENSE: o `tool/build_web.sh` troca esta linha pelo script do AdSense
+       e pela meta de verificação do site quando recebe ADSENSE_CLIENT. Sem
+       ele, a página sai sem nenhum código de anúncio. -->
+
+  <style>
+    body { background: #B8CAC0; }
+    /* Links para as páginas de texto (regras e privacidade). Em tela larga
+       ficam na lateral vazia, fora da coluna do jogo (WebFrame, 480 px); em
+       tela estreita ficariam por cima do jogo, então somem — mas continuam no
+       HTML para quem lê a página sem rodar o Flutter (buscadores, revisão do
+       AdSense). */
+    .site-links { position: fixed; left: 24px; bottom: 20px; z-index: 10;
+      font: 14px/1.8 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .site-links a { display: block; color: #3d6b47; }
+    @media (max-width: 999px) { .site-links { display: none; } }
+  </style>
+</head>
+<body>
+  <nav class="site-links" aria-label="Sobre o Multi Jogos">
+    <a href="como-jogar.html">Como jogar</a>
+    <a href="privacidade.html">Privacidade</a>
+    <a href="https://apps.apple.com/br/app/multi-jogos/id6802302325">Baixar na App Store</a>
+  </nav>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
